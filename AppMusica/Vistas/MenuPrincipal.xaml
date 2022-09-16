@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMusica.Vistas.MenuPrincipal" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*" />
+                <RowDefinition />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackLayout Spacing="200" Margin="0,20,0,0" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+                <Grid>
+                    <Image Source="minilogo.png" WidthRequest="50" />
+                    <Label Text="MusicFy" FontSize="20" TextColor="#544487" Margin="0,0,0,0" TranslationX="60" TranslationY="5"/>
+                </Grid>
+                <ImageButton Source="Opciones.png" WidthRequest="35"
+                             BackgroundColor="White"
+                             />
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="1" 
+                         Grid.ColumnSpan="2" 
+                         Margin="10,0,10,0"
+                         >
+                <Image Source="banner1.png" Margin="20,20,20,0"/>
+                <StackLayout HorizontalOptions="Center"  Orientation="Horizontal" Spacing="100" TranslationY="-70">
+                    <Grid>
+                        <Label Text="Luis Fonsi" TextColor="White" FontAttributes="Bold" Padding="0,0,5,0" FontSize="20"/>
+
+                        <Label Text="321.546.231" TextColor="White" Margin="0,25,0,0"/>
+                    </Grid>
+                    <Image Source="check.png" Margin="-100,0,0,0" TranslationY="-10"/>
+                    <Button Text="Seguir +" FontSize="16" TextColor="Black" BackgroundColor="#D9D9D9" Opacity="0.9" CornerRadius="100" TextTransform="None"/>
+                </StackLayout>
+
+
+
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="120" Margin="0,-40,0,0">
+                    <Label Text="Top Mix" FontAttributes="Bold" FontSize="25" Margin="0,0,0,0" TextColor="Black" />
+                    <Button Text="Ver todo" TextColor="#4527A0" BackgroundColor="Transparent"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="70">
+                    <Image Source="top.png" WidthRequest="130"/>
+                    <Image Source="top1.png" WidthRequest="130"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="100" >
+                    <Label Text="Recientes" FontAttributes="Bold" FontSize="25" Margin="0,0,0,0" TextColor="Black"/>
+                    <Button Text="Ver todo" TextColor="#4527A0" BackgroundColor="Transparent"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Image Source="lista1.png" WidthRequest="50"/>
+                    <StackLayout Orientation="Horizontal" Spacing="180">
+                        <Grid Margin="15,0,0,0">
+                            <Label Text="Never" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
+                            <Label Text="Heart ." Margin="0,16,0,0" TextColor="#4527A0"/>
+                            <Label Text="VEVO" Margin="0,31,0,0" TextColor="#4527A0"/>
+                        </Grid>
+                        <Image Source="menu"/>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Image Source="lista2.png" WidthRequest="50"/>
+                    <StackLayout Orientation="Horizontal" Spacing="110">
+                        <Grid Margin="15,0,0,0">
+                            <Label Text="Jack In The Box" FontAttributes="Bold" TextColor="Black" FontSize="16"/>
+                            <Label Text="JHope ." Margin="0,16,0,0" TextColor="#4527A0"/>
+                            <Label Text="2022" Margin="0,31,0,0" TextColor="#4527A0"/>
+                        </Grid>
+                        <Image Source="menu"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="2"
+                         
+               Grid.ColumnSpan="2"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Orientation="Horizontal">
+                <ImageButton Source="home.png"
+                             BackgroundColor="White"
+                             CornerRadius="10"
+                             HeightRequest="40"
+                             Padding="5,5,5,5"
+                             Margin="0,20,20,35"/>
+                <ImageButton Source="burbuja.png"
+                             BackgroundColor="White"
+                             CornerRadius="10"
+                             HeightRequest="40"
+                             Padding="5,5,5,5"
+                             Margin="0,20,0,35"/>
+
+                <Grid >
+                    <StackLayout Rotation="90" VerticalOptions="Center"  >
+                        <ImageButton Source="marca.png"
+                                     WidthRequest="60"
+                                     BackgroundColor="#544487"
+                                     CornerRadius="10"
+                                     Rotation="45"
+                                     Margin="0,0,60,0"
+                                     Padding="18,18,18,18"/>
+                    </StackLayout>
+                </Grid>
+                <ImageButton Source="search.png"
+                             BackgroundColor="White"
+                             CornerRadius="10"
+                             Padding="5,5,5,5"
+                             Margin="0,20,0,35"
+                             HeightRequest="40"
+                             />
+                <ImageButton Source="user.png"
+                             BackgroundColor="White"
+                             CornerRadius="10"
+                             HeightRequest="40"
+                             Padding="5,5,5,5"
+                             Margin="20,20,0,35"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

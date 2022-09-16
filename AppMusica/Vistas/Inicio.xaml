@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMusica.Vistas.Inicio" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+        <StackLayout VerticalOptions="Center" Margin="50">
+            <Image Source="LogoM.png" HeightRequest="350"/>
+            <Button Text="Iniciar Sesión" 
+                    BackgroundColor="#544487"
+                    CornerRadius="10"
+                    FontAttributes="Bold"
+                     TextTransform="None"
+                    TextColor="White"
+                    x:Name="btniniciar"
+                    Clicked="btniniciar_Clicked"/>
+            <Button Text="Registrarse" 
+                    Margin="0,20,0,0"
+                    CornerRadius="10"                   
+                    BorderWidth="0.8"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                     TextTransform="None"
+                    TextColor="Black"
+                    x:Name="btnregistro"
+                    Clicked="btnregistro_Clicked"/>
+
+                <Button Text="Continuar como Invitado" TextColor="#352B55" TextTransform="None"
+                         BackgroundColor="White"
+                         CornerRadius="10" 
+                        x:Name="btninvitado"
+                        Clicked="btninvitado_Clicked"                 
+                        />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMusica.Vistas.Restablecer" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+
+            <StackLayout HorizontalOptions="CenterAndExpand" Padding="30">
+                <ImageButton Source="volver" HeightRequest="30" WidthRequest="30"
+                       HorizontalOptions="Start" BackgroundColor="White" 
+                       x:Name="btnvolver"
+                       Clicked="btnvolver_Clicked"/>
+                <Label Text="¡Bienvenido de nuevo! ¡Me alegra verte de nuevo!"
+                       TextColor="Black"
+                       FontAttributes="Bold" Margin="10,10,10,0" FontSize="20"/>
+                <Label Text="Su contraseña debe ser única entre aquellas previamnete usado"
+                       TextColor="#8391A1"  CharacterSpacing="1"
+                       Margin="10,10,10,15" FontSize="12"/>
+                <Frame HasShadow="False"
+                    CornerRadius="10" Padding="5" BackgroundColor="#F7F8F9">
+                    <Entry Keyboard="Text" 
+                     Placeholder="Nueva Contraseña" IsPassword="True"
+                           PlaceholderColor="#8391A1" FontSize="12" />
+
+                </Frame>
+                <Frame HasShadow="False"
+                    CornerRadius="10" Padding="5" BackgroundColor="#F7F8F9">
+                    <Entry Keyboard="Text" 
+                     Placeholder="Confirmar Contraseña" IsPassword="True"
+                           PlaceholderColor="#8391A1" FontSize="12" />
+
+                </Frame>
+
+
+
+                <Button Text="Restablecer Contraseña" 
+                    BackgroundColor="#544487"
+                    CornerRadius="10"
+                        HeightRequest="40"
+                     TextTransform="None"
+                    TextColor="White"
+                        x:Name="btnreset"
+                        Clicked="btnreset_Clicked"                    
+                        />
+
+
+                <Label  VerticalOptions="End"  HorizontalOptions="Start" Text="¿Recordo su Contraseña?"      
+                       TranslationX="30"
+                       TranslationY="270"                                             
+                      />
+                <Button Text="Iniciar Sesión" TextColor="#352B55" TextTransform="None"
+                         BackgroundColor="Transparent"  HorizontalOptions="Center"
+                        TranslationX="85"
+                       TranslationY="230"
+                         CornerRadius="10" 
+                        x:Name="btninicio"
+                        Clicked="btninicio_Clicked"                        
+                        />
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

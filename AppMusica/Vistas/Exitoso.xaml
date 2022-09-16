@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMusica.Vistas.Exitoso" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+
+            <StackLayout HorizontalOptions="CenterAndExpand" Padding="30">
+                <Image Source="Exitoso"/>
+                <Label HorizontalTextAlignment="Center" Text="¡Contraseña Cambiada!"
+                       TextColor="Black"
+                       FontAttributes="Bold" Margin="10,10,10,0" FontSize="20"/>
+                <Label HorizontalTextAlignment="Center"
+                    Text="Tu contraseña ha sido cambiada exitosamente"
+                       TextColor="#8391A1"  CharacterSpacing="1"
+                       Margin="10,10,10,15" FontSize="12"/>
+
+                <Button Text="ir a Iniciar Sesión" 
+                    BackgroundColor="#544487"
+                    CornerRadius="10"
+                        HeightRequest="40"
+                     TextTransform="None"
+                    TextColor="White"
+                          x:Name="btninicio"
+                        Clicked="btninicio_Clicked"                    
+                        />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

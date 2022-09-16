@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMusica.Vistas.Registrarse" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+
+            <StackLayout HorizontalOptions="CenterAndExpand" Padding="30">
+                <ImageButton Source="volver" HeightRequest="30" WidthRequest="30"
+                       HorizontalOptions="Start" BackgroundColor="White" 
+                       x:Name="btnvolver"
+                       Clicked="btnvolver_Clicked"/>
+
+                <Label Text="¡Hola! Registrate para Comenzar"
+                       TextColor="Black"
+                       FontAttributes="Bold" Margin="10,10,10,15" FontSize="Large"/>
+                <Frame HasShadow="False"
+                    CornerRadius="10" Padding="5"  BackgroundColor="#F7F8F9"  >
+                    <Entry Keyboard="Text"
+                     Placeholder="Nombre de Usuario"
+                     PlaceholderColor="#8391A1"                    
+                     FontSize="12" />
+
+                </Frame>
+                <Frame HasShadow="False"
+                    CornerRadius="10" Padding="5" BackgroundColor="#F7F8F9">
+                    <Entry Keyboard="Email" 
+                     Placeholder="Correo Electrónico" 
+                           PlaceholderColor="#8391A1" FontSize="12" />
+
+                </Frame>
+                <Frame HasShadow="False"
+                    CornerRadius="10" Padding="5" BackgroundColor="#F7F8F9">
+                    <Entry Keyboard="Text" 
+                     Placeholder="Contraseña" IsPassword="True"
+                           PlaceholderColor="#8391A1" FontSize="12" />
+
+                </Frame>
+                <Frame HasShadow="False"
+                    CornerRadius="10" Padding="5" BackgroundColor="#F7F8F9">
+                    <Entry Keyboard="Text" 
+                     Placeholder="Confirmar Contraseña" IsPassword="True"
+                           PlaceholderColor="#8391A1" FontSize="12" />
+
+                </Frame>
+
+                <Button Text="Registrarse" 
+                    BackgroundColor="#544487"
+                    CornerRadius="10"
+                        HeightRequest="40"
+                     TextTransform="None"
+                    TextColor="White"/>
+
+                <Label HorizontalOptions="Center" Text="O Registrate con"
+                       Margin="20"/>
+                <Button HorizontalOptions="Start" ImageSource="google" CornerRadius="10" 
+                        BackgroundColor="#E8ECF4" WidthRequest="100" Margin="40,0,0,0"
+                       />
+                <Button HorizontalOptions="End" ImageSource="facebook"  CornerRadius="10"
+                        BackgroundColor="#E8ECF4" WidthRequest="100" Margin="0,0,40,0"
+                        TranslationY="-55"/>
+
+                <Label HorizontalOptions="Start" Text="¿Ya tienes cuenta?"      
+                       TranslationX="30"
+                       TranslationY="-30"                                             
+                      />
+                <Label HorizontalOptions="Center" Text="Iniciar Sesión Ahora"
+                       TextColor="#352B55"
+                       TranslationX="60"
+                       TranslationY="-55"
+                      />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

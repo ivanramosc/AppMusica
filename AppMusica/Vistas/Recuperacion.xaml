@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMusica.Vistas.Recuperacion" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+
+            <StackLayout HorizontalOptions="CenterAndExpand" Padding="30">
+                <ImageButton Source="volver" HeightRequest="30" WidthRequest="30"
+                       HorizontalOptions="Start" BackgroundColor="White" 
+                       x:Name="btnvolver"
+                       Clicked="btnvolver_Clicked"/>
+
+                <Label Text="¿Has olvidado tu contraseña?"
+                       TextColor="Black"
+                       FontAttributes="Bold" Margin="10,10,10,0" FontSize="20"/>
+                <Label Text="¡No te procupes! Por favor introduzca la direccion de su correo electronico vinculada a su cuenta"
+                       TextColor="#8391A1"  CharacterSpacing="1"
+                       Margin="10,10,10,15" FontSize="12"/>
+                <Frame HasShadow="False"
+                    CornerRadius="10" Padding="5"  BackgroundColor="#F7F8F9"  >
+                    <Entry Keyboard="Email"
+                     Placeholder="Ingrese su Correo Electronico"
+                     PlaceholderColor="#8391A1"        
+                     Margin="0,0,0,20"
+                     FontSize="12" />
+
+                </Frame>
+                <Button Text="Enviar" 
+                    BackgroundColor="#544487"
+                    CornerRadius="10"
+                        HeightRequest="40"
+                     TextTransform="None"
+                    TextColor="White"
+                        x:Name="btnenviar"
+                        Clicked="btnenviar_Clicked"                        
+                        />
+
+
+                <Label  VerticalOptions="End"  HorizontalOptions="Start" Text="¿Recordo su Contraseña?"      
+                       TranslationX="30"
+                       TranslationY="270"                                             
+                      />
+                <Button Text="Iniciar Sesión" TextColor="#352B55" TextTransform="None"
+                         BackgroundColor="Transparent"  HorizontalOptions="Center"
+                        TranslationX="85"
+                       TranslationY="230"
+                         CornerRadius="10" 
+                        x:Name="btninicio"
+                        Clicked="btninicio_Clicked"                        
+                        />
+              
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
