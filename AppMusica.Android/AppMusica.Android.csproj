@@ -93,9 +93,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\LDPlayer9_es_1009_ld.exe" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\view.png" />
   </ItemGroup>
   <ItemGroup>
@@ -157,12 +154,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\chat1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lista1.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lista2.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Exitoso.png" />
